@@ -46,7 +46,7 @@ namespace SocketCom
                             byte[] buffer = new byte[1024];
                             client.Receive(buffer);
 
-                            msg = Encoding.ASCII.GetString(buffer);
+                            msg = Encoding.UTF8.GetString(buffer);
                             Console.WriteLine(msg);
                         }
                         Console.WriteLine("Cerrando conexión");
